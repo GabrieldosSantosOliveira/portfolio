@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import './cabecalho.css'
 
 export default function Cabecalho() {
   return (
-    <div className="App">
-      <Link to="/">Home</Link>
-      <Link to="/Servicos">Serviços</Link>
-      <Link to="/Conhecimentos">Conhecimetnos</Link>
-      <Link to="/Contato">Contato</Link>
+    <div className="container">
+      <Link to="/"><div>Home</div></Link>
+      <Link to="/Servicos"><div>Serviços</div></Link>
+      <Link to="/Conhecimentos"><div>Conhecimetnos</div></Link>
+      <Link to="/Contato"><div>Contato</div></Link>
 
     </div>
   );
