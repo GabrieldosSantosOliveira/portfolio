@@ -1,0 +1,28 @@
+.container-grid{
+    height: 100vh;
+ display: grid;
+ grid-template-areas: 
+  'cabecalho cabecalho'
+  'aside mean'
+  'rodape rodape';
+};
+
+.aside{
+grid-area: aside;;
+
+}
+img{
+    height: 100vh;
+}
+.mean{
+    grid-area: mean;
+    background-color:blue;
+}
+h1{
+    font-size: 1.6rem;
+    text-align: center;
+}
+p{
+    font-size: 0.9rem;
+    margin: 20px;
+}

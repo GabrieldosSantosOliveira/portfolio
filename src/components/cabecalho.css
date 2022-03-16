@@ -1,21 +1,25 @@
-*{
-    box-sizing: border-box;
-}
+
 a{
     text-decoration: none;
     font-size: larger;
-    color: white;
-    width: auto ;
-    background-color: blue;
-padding: 1rem;
-border-radius: 10px;
-margin-bottom: 10px;
+    color: black ;
+    position: relative;
+
+    
 }
 .container{
+    grid-area: cabecalho;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: flex-end;
-    background-color: black;
-    height: 300px;
+    background-color: rgba(247, 247, 247, 80%);
+    height: 50px;
 }
 
+.item{
+    cursor: auto;
+}
+.container:only-child{
+    cursor: pointer;
+}

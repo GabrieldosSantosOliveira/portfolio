@@ -1,0 +1,7 @@
+.flex{
+    grid-area: rodape;
+    display:flex;
+    justify-content: flex-start;
+    background-color: gray;
+    height: 30px;
+}
