@@ -9,6 +9,8 @@
     "lint": "next lint",
     "format": "prettier -w ."
   },
+  "license": "MIT",
+  "author": "Gabriel dos Santos Oliveira <gabrielsantosoliveira951@gmail.com>",
   "dependencies": {
     "framer-motion": "^10.2.5",
     "next": "13.2.4",
