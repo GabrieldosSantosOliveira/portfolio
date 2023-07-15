@@ -1,31 +1,33 @@
-import { About } from '@/components/About';
-import { Contact } from '@/components/Contact';
-import { NavBar } from '@/components/NavBar';
-import { Project } from '@/components/Project';
-import { Tech } from '@/components/Tech';
-import { projects } from '../../projects';
-import { techs } from '../../techs';
+import { Header } from '@/components/Header';
+import { Social } from '@/components/Social';
+import Image from 'next/image';
+import { contacts } from '../../contacts';
 export default function Home() {
   return (
-    <div className="bg-[#0A192F] to-blue-900">
-      <About />
-
-      <div id="techs" className="flex justify-center px-4 ">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center gap-5">
-          {techs.map((tech, index) => {
-            return <Tech {...tech} key={index} />;
-          })}
+    <div className="bg-[#f1faee] h-screen">
+      <Header />
+      <div className="flex pt-20 flex-col md:flex-row items-center justify-center gap-8">
+        <div className="flex flex-col gap-4">
+          <div className="text-center text-black text-4xl font-bold font-[Poppins] italic">
+            Olá, eu sou o Gabriel
+          </div>
+          <div className="text-center text-black text-4xl font-bold font-[Poppins] italic">
+            Desenvolvedor Full-Stack
+          </div>
+          <div className='flex flex-1 justify-center gap-6'>
+          {contacts.map((contact, index) => {
+          return <Social {...contact} key={index} />;
+        })}
         </div>
-      </div>
-      <div id="projects" className="flex justify-center mt-5">
-        <div className="grid  gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {projects.map((project, index) => {
-            return <Project {...project} key={index} />;
-          })}
         </div>
+        <Image
+          className="rounded-full"
+          src="/assets/me.jpg"
+          alt="me"
+          width={150}
+          height={150}
+        />
       </div>
-      <Contact />
-      <NavBar />
     </div>
   );
 }
