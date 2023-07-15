@@ -16,7 +16,7 @@ export const Project: FC<IProject> = ({
           {title}
         </h1>
         {description.map((value) => (
-          <p>{value}</p>
+          <p key={value}>{value}</p>
         ))}
         <a href={link} target="_blank" className="flex underline">
           Link para o repositório{' '}
@@ -29,7 +29,7 @@ export const Project: FC<IProject> = ({
         </a>
         <div className="flex gap-2">
           {techs.map((tech) => (
-            <Image src={tech} alt="Tecnologia" width={50} height={50} />
+            <Image key={tech} src={tech} alt="Tecnologia" width={50} height={50} />
           ))}
         </div>
       </div>
