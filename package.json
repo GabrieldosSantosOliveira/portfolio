@@ -13,7 +13,7 @@
   "author": "Gabriel dos Santos Oliveira <gabrielsantosoliveira951@gmail.com>",
   "dependencies": {
     "framer-motion": "^10.2.5",
-    "next": "13.2.4",
+    "next": "14.2.10",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
